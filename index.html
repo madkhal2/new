@@ -2,57 +2,107 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>سوق الأجهزة الذكية</title>
+  <title>SmartZone - سوق الأجهزة الذكية</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f9ff;
+      background-color: #f4faff;
     }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
     .banner {
-      background: url('banner-smart.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background: linear-gradient(to left, #0077B6, #00A8E8);
       color: white;
-      padding: 100px 20px;
-      text-align: center;
+      padding: 60px 30px;
+      position: relative;
     }
+
+    .banner-text {
+      max-width: 600px;
+    }
+
     .banner h2 {
-      font-size: 48px;
+      font-size: 42px;
       margin-bottom: 10px;
-      text-shadow: 2px 2px 4px #00000060;
     }
-    .services, .products {
-      padding: 40px 20px;
-      text-align: center;
+
+    .banner p {
+      font-size: 18px;
+      margin-bottom: 25px;
     }
-    .services h3, .products h3 {
-      font-size: 32px;
+
+    .banner-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .banner-buttons a {
+      background-color: white;
+      color: #0077B6;
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .banner-buttons a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .banner img {
+      max-width: 350px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    h3 {
+      font-size: 30px;
       color: #0077B6;
       margin-bottom: 30px;
     }
-    .service-box, .product-box {
-      display: inline-block;
-      width: 250px;
-      margin: 15px;
-      background-color: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
       border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 260px;
       padding: 20px;
     }
-    .service-box img, .product-box img {
-      width: 80px;
-      height: 80px;
-    }
-    .product-box img {
+
+    .card img {
       width: 100%;
-      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .video-container video {
+      width: 90%;
+      max-width: 800px;
       border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
-    .product-box h4 {
-      margin: 15px 0 5px;
-      color: #333;
-    }
-    .product-box p {
-      color: #555;
+
+    a {
+      color: #0077B6;
     }
   </style>
 </head>
@@ -62,49 +112,54 @@
   <!--#include file="header.html" -->
 
   <!-- البنر -->
-  <div class="banner">
-    <h2>مرحباً بكم في سوق الأجهزة الذكية</h2>
-    <p>أحدث التقنيات بأفضل الأسعار</p>
+  <div class="banner" id="home">
+    <div class="banner-text">
+      <h2>مرحباً بكم في SmartZone</h2>
+      <p>استكشف أفضل الأجهزة الذكية بأسعار تنافسية وخدمات موثوقة</p>
+      <div class="banner-buttons">
+        <a href="#products">📱 المنتجات</a>
+        <a href="#about">👤 من نحن</a>
+        <a href="contact.html">✉️ تواصل معنا</a>
+      </div>
+    </div>
+    <img src="111.png" alt="SmartZone Banner Image">
   </div>
 
-  <!-- الخدمات -->
-  <section class="services">
-    <h3>خدماتنا</h3>
-    <div class="service-box">
-      <img src="delivery.png" alt="خدمة التوصيل">
-      <h4>توصيل سريع</h4>
-      <p>نوصل لك جهازك خلال 48 ساعة</p>
-    </div>
-    <div class="service-box">
-      <img src="warranty.png" alt="ضمان الجودة">
-      <h4>ضمان سنتين</h4>
-      <p>ضمان شامل على جميع الأجهزة</p>
-    </div>
-    <div class="service-box">
-      <img src="support.png" alt="دعم فني">
-      <h4>دعم فني مباشر</h4>
-      <p>جاهزون لمساعدتك على مدار الساعة</p>
+  <!-- الفيديو -->
+  <section class="video-container">
+    <h3>🎥 شاهد الفيديو التعريفي</h3>
+    <video controls poster="111.png">
+      <source src="12.mp4" type="video/mp4">
+      المتصفح لا يدعم تشغيل الفيديو.
+    </video>
+  </section>
+
+  <!-- المنتجات -->
+  <section id="products">
+    <h3>📱 منتجاتنا</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="smartphone.jpg" alt="هاتف ذكي">
+        <h4>هاتف X</h4>
+        <p>شاشة 6.5 بوصة، ذاكرة 128GB</p>
+      </div>
+      <div class="card">
+        <img src="smartwatch.jpg" alt="ساعة ذكية">
+        <h4>ساعة Z</h4>
+        <p>مراقبة صحية، بطارية طويلة</p>
+      </div>
+      <div class="card">
+        <img src="smarthome.jpg" alt="مساعد منزلي">
+        <h4>مساعد ذكي</h4>
+        <p>تحكم صوتي وأجهزة منزلية ذكية</p>
+      </div>
     </div>
   </section>
 
-  <!-- الأجهزة -->
-  <section class="products">
-    <h3>الأجهزة الذكية</h3>
-    <div class="product-box">
-      <img src="smartphone.jpg" alt="هاتف ذكي">
-      <h4>هاتف ذكي X</h4>
-      <p>شاشة 6.5 بوصة، 128GB</p>
-    </div>
-    <div class="product-box">
-      <img src="smartwatch.jpg" alt="ساعة ذكية">
-      <h4>ساعة ذكية Z</h4>
-      <p>مراقبة صحة، إشعارات، بطارية طويلة</p>
-    </div>
-    <div class="product-box">
-      <img src="smarthome.jpg" alt="جهاز منزلي ذكي">
-      <h4>مساعد منزلي</h4>
-      <p>تحكم صوتي، أتمتة ذكية</p>
-    </div>
+  <!-- من نحن -->
+  <section id="about">
+    <h3>👤 من نحن</h3>
+    <p>نحن متجر متخصص في بيع أحدث الأجهزة الذكية وتقديم تجربة تسوق مريحة وآمنة.</p>
   </section>
 
   <!-- الشريط السفلي -->
