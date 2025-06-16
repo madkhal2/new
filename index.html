@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>سوق الأجهزة الذكية</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f9ff;
+    }
+    .banner {
+      background: url('banner-smart.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .banner h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px #00000060;
+    }
+    .services, .products {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .services h3, .products h3 {
+      font-size: 32px;
+      color: #0077B6;
+      margin-bottom: 30px;
+    }
+    .service-box, .product-box {
+      display: inline-block;
+      width: 250px;
+      margin: 15px;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .service-box img, .product-box img {
+      width: 80px;
+      height: 80px;
+    }
+    .product-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .product-box h4 {
+      margin: 15px 0 5px;
+      color: #333;
+    }
+    .product-box p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- الشريط العلوي -->
+  <!--#include file="header.html" -->
+
+  <!-- البنر -->
+  <div class="banner">
+    <h2>مرحباً بكم في سوق الأجهزة الذكية</h2>
+    <p>أحدث التقنيات بأفضل الأسعار</p>
+  </div>
+
+  <!-- الخدمات -->
+  <section class="services">
+    <h3>خدماتنا</h3>
+    <div class="service-box">
+      <img src="delivery.png" alt="خدمة التوصيل">
+      <h4>توصيل سريع</h4>
+      <p>نوصل لك جهازك خلال 48 ساعة</p>
+    </div>
+    <div class="service-box">
+      <img src="warranty.png" alt="ضمان الجودة">
+      <h4>ضمان سنتين</h4>
+      <p>ضمان شامل على جميع الأجهزة</p>
+    </div>
+    <div class="service-box">
+      <img src="support.png" alt="دعم فني">
+      <h4>دعم فني مباشر</h4>
+      <p>جاهزون لمساعدتك على مدار الساعة</p>
+    </div>
+  </section>
+
+  <!-- الأجهزة -->
+  <section class="products">
+    <h3>الأجهزة الذكية</h3>
+    <div class="product-box">
+      <img src="smartphone.jpg" alt="هاتف ذكي">
+      <h4>هاتف ذكي X</h4>
+      <p>شاشة 6.5 بوصة، 128GB</p>
+    </div>
+    <div class="product-box">
+      <img src="smartwatch.jpg" alt="ساعة ذكية">
+      <h4>ساعة ذكية Z</h4>
+      <p>مراقبة صحة، إشعارات، بطارية طويلة</p>
+    </div>
+    <div class="product-box">
+      <img src="smarthome.jpg" alt="جهاز منزلي ذكي">
+      <h4>مساعد منزلي</h4>
+      <p>تحكم صوتي، أتمتة ذكية</p>
+    </div>
+  </section>
+
+  <!-- الشريط السفلي -->
+  <!--#include file="footer.html" -->
+
+</body>
+</html>
